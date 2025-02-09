@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EyelashesAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c3bc0d681fe2c092bbae55ec985d5d60b5e24bc7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+95b41ec54eaad1505d296f03d9e529f3d4d08078")]
 [assembly: System.Reflection.AssemblyProductAttribute("EyelashesAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EyelashesAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

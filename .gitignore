@@ -40,6 +40,8 @@ backend/.vs/
 .vscode/
 !.vscode/extensions.json
 .idea/
+.idea/**  # Полностью игнорирует .idea и все подпапки
+.idea.EyelashesAPI/
 *.sln
 *.suo
 *.ntvs*
