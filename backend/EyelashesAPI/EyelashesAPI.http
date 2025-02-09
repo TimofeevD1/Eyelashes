@@ -1,0 +1,6 @@
+@EyelashesAPI_HostAddress = http://localhost:5284
+
+GET {{EyelashesAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

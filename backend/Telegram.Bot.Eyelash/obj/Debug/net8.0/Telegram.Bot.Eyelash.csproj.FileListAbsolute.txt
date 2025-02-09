@@ -1,0 +1,12 @@
+C:\Project\EyelashesAPI\Telegram.Bot.Eyelash\bin\Debug\net8.0\Telegram.Bot.Eyelash.deps.json
+C:\Project\EyelashesAPI\Telegram.Bot.Eyelash\bin\Debug\net8.0\Telegram.Bot.Eyelash.dll
+C:\Project\EyelashesAPI\Telegram.Bot.Eyelash\bin\Debug\net8.0\Telegram.Bot.Eyelash.pdb
+C:\Project\EyelashesAPI\Telegram.Bot.Eyelash\obj\Debug\net8.0\Telegram.Bot.Eyelash.csproj.AssemblyReference.cache
+C:\Project\EyelashesAPI\Telegram.Bot.Eyelash\obj\Debug\net8.0\Telegram.Bot.Eyelash.GeneratedMSBuildEditorConfig.editorconfig
+C:\Project\EyelashesAPI\Telegram.Bot.Eyelash\obj\Debug\net8.0\Telegram.Bot.Eyelash.AssemblyInfoInputs.cache
+C:\Project\EyelashesAPI\Telegram.Bot.Eyelash\obj\Debug\net8.0\Telegram.Bot.Eyelash.AssemblyInfo.cs
+C:\Project\EyelashesAPI\Telegram.Bot.Eyelash\obj\Debug\net8.0\Telegram.Bot.Eyelash.csproj.CoreCompileInputs.cache
+C:\Project\EyelashesAPI\Telegram.Bot.Eyelash\obj\Debug\net8.0\Telegram.Bot.Eyelash.dll
+C:\Project\EyelashesAPI\Telegram.Bot.Eyelash\obj\Debug\net8.0\refint\Telegram.Bot.Eyelash.dll
+C:\Project\EyelashesAPI\Telegram.Bot.Eyelash\obj\Debug\net8.0\Telegram.Bot.Eyelash.pdb
+C:\Project\EyelashesAPI\Telegram.Bot.Eyelash\obj\Debug\net8.0\ref\Telegram.Bot.Eyelash.dll

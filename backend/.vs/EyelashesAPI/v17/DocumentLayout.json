@@ -1,0 +1,890 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Project\\EyelashesAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DD391BE2-94AA-4203-8CFA-D44A6634DE52}|EyelashesAPI\\EyelashesAPI.csproj|c:\\project\\eyelashesapi\\eyelashesapi\\telegrambot\\telegrambotbackgroundservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD391BE2-94AA-4203-8CFA-D44A6634DE52}|EyelashesAPI\\EyelashesAPI.csproj|solutionrelative:eyelashesapi\\telegrambot\\telegrambotbackgroundservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD391BE2-94AA-4203-8CFA-D44A6634DE52}|EyelashesAPI\\EyelashesAPI.csproj|c:\\project\\eyelashesapi\\eyelashesapi\\controllers\\aboutmecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD391BE2-94AA-4203-8CFA-D44A6634DE52}|EyelashesAPI\\EyelashesAPI.csproj|solutionrelative:eyelashesapi\\controllers\\aboutmecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD391BE2-94AA-4203-8CFA-D44A6634DE52}|EyelashesAPI\\EyelashesAPI.csproj|c:\\project\\eyelashesapi\\eyelashesapi\\telegrambot\\telegrammessageservice .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD391BE2-94AA-4203-8CFA-D44A6634DE52}|EyelashesAPI\\EyelashesAPI.csproj|solutionrelative:eyelashesapi\\telegrambot\\telegrammessageservice .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD391BE2-94AA-4203-8CFA-D44A6634DE52}|EyelashesAPI\\EyelashesAPI.csproj|c:\\project\\eyelashesapi\\eyelashesapi\\telegrambot\\itelegrammessageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD391BE2-94AA-4203-8CFA-D44A6634DE52}|EyelashesAPI\\EyelashesAPI.csproj|solutionrelative:eyelashesapi\\telegrambot\\itelegrammessageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD391BE2-94AA-4203-8CFA-D44A6634DE52}|EyelashesAPI\\EyelashesAPI.csproj|c:\\project\\eyelashesapi\\eyelashesapi\\requests\\aboutmerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD391BE2-94AA-4203-8CFA-D44A6634DE52}|EyelashesAPI\\EyelashesAPI.csproj|solutionrelative:eyelashesapi\\requests\\aboutmerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD391BE2-94AA-4203-8CFA-D44A6634DE52}|EyelashesAPI\\EyelashesAPI.csproj|c:\\project\\eyelashesapi\\eyelashesapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD391BE2-94AA-4203-8CFA-D44A6634DE52}|EyelashesAPI\\EyelashesAPI.csproj|solutionrelative:eyelashesapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD391BE2-94AA-4203-8CFA-D44A6634DE52}|EyelashesAPI\\EyelashesAPI.csproj|c:\\project\\eyelashesapi\\eyelashesapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DD391BE2-94AA-4203-8CFA-D44A6634DE52}|EyelashesAPI\\EyelashesAPI.csproj|solutionrelative:eyelashesapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD391BE2-94AA-4203-8CFA-D44A6634DE52}|EyelashesAPI\\EyelashesAPI.csproj|c:\\project\\eyelashesapi\\eyelashesapi\\telegrambot\\options\\telegramoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD391BE2-94AA-4203-8CFA-D44A6634DE52}|EyelashesAPI\\EyelashesAPI.csproj|solutionrelative:eyelashesapi\\telegrambot\\options\\telegramoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD391BE2-94AA-4203-8CFA-D44A6634DE52}|EyelashesAPI\\EyelashesAPI.csproj|c:\\project\\eyelashesapi\\eyelashesapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DD391BE2-94AA-4203-8CFA-D44A6634DE52}|EyelashesAPI\\EyelashesAPI.csproj|solutionrelative:eyelashesapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2DEBFE6-D34E-41B1-AC9F-5F9FA1667AD9}|DataAccess\\DataAccess.csproj|c:\\project\\eyelashesapi\\dataaccess\\extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2DEBFE6-D34E-41B1-AC9F-5F9FA1667AD9}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27FC3CC2-D153-491F-B67C-27E7E5FFBD38}|BussinessLogic\\BussinessLogic.csproj|c:\\project\\eyelashesapi\\bussinesslogic\\records\\bookingslotrec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27FC3CC2-D153-491F-B67C-27E7E5FFBD38}|BussinessLogic\\BussinessLogic.csproj|solutionrelative:bussinesslogic\\records\\bookingslotrec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27FC3CC2-D153-491F-B67C-27E7E5FFBD38}|BussinessLogic\\BussinessLogic.csproj|c:\\project\\eyelashesapi\\bussinesslogic\\interfaces\\ibookingcalendarservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27FC3CC2-D153-491F-B67C-27E7E5FFBD38}|BussinessLogic\\BussinessLogic.csproj|solutionrelative:bussinesslogic\\interfaces\\ibookingcalendarservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD391BE2-94AA-4203-8CFA-D44A6634DE52}|EyelashesAPI\\EyelashesAPI.csproj|c:\\project\\eyelashesapi\\eyelashesapi\\controllers\\bookingcalendarcontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD391BE2-94AA-4203-8CFA-D44A6634DE52}|EyelashesAPI\\EyelashesAPI.csproj|solutionrelative:eyelashesapi\\controllers\\bookingcalendarcontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD391BE2-94AA-4203-8CFA-D44A6634DE52}|EyelashesAPI\\EyelashesAPI.csproj|c:\\project\\eyelashesapi\\eyelashesapi\\requests\\bookingslotrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD391BE2-94AA-4203-8CFA-D44A6634DE52}|EyelashesAPI\\EyelashesAPI.csproj|solutionrelative:eyelashesapi\\requests\\bookingslotrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27FC3CC2-D153-491F-B67C-27E7E5FFBD38}|BussinessLogic\\BussinessLogic.csproj|c:\\project\\eyelashesapi\\bussinesslogic\\services\\bookingcalendarservice .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27FC3CC2-D153-491F-B67C-27E7E5FFBD38}|BussinessLogic\\BussinessLogic.csproj|solutionrelative:bussinesslogic\\services\\bookingcalendarservice .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2DEBFE6-D34E-41B1-AC9F-5F9FA1667AD9}|DataAccess\\DataAccess.csproj|c:\\project\\eyelashesapi\\dataaccess\\interfaces\\ibookingcalendarrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2DEBFE6-D34E-41B1-AC9F-5F9FA1667AD9}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\interfaces\\ibookingcalendarrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2DEBFE6-D34E-41B1-AC9F-5F9FA1667AD9}|DataAccess\\DataAccess.csproj|c:\\project\\eyelashesapi\\dataaccess\\interfaces\\iaboutmerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2DEBFE6-D34E-41B1-AC9F-5F9FA1667AD9}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\interfaces\\iaboutmerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2DEBFE6-D34E-41B1-AC9F-5F9FA1667AD9}|DataAccess\\DataAccess.csproj|c:\\project\\eyelashesapi\\dataaccess\\repositorys\\bookingcalendarrepository .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2DEBFE6-D34E-41B1-AC9F-5F9FA1667AD9}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\repositorys\\bookingcalendarrepository .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27FC3CC2-D153-491F-B67C-27E7E5FFBD38}|BussinessLogic\\BussinessLogic.csproj|c:\\project\\eyelashesapi\\bussinesslogic\\records\\bookingcalendarrec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27FC3CC2-D153-491F-B67C-27E7E5FFBD38}|BussinessLogic\\BussinessLogic.csproj|solutionrelative:bussinesslogic\\records\\bookingcalendarrec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2DEBFE6-D34E-41B1-AC9F-5F9FA1667AD9}|DataAccess\\DataAccess.csproj|c:\\project\\eyelashesapi\\dataaccess\\models\\bookingcalendar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2DEBFE6-D34E-41B1-AC9F-5F9FA1667AD9}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\models\\bookingcalendar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27FC3CC2-D153-491F-B67C-27E7E5FFBD38}|BussinessLogic\\BussinessLogic.csproj|c:\\project\\eyelashesapi\\bussinesslogic\\records\\orderrec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27FC3CC2-D153-491F-B67C-27E7E5FFBD38}|BussinessLogic\\BussinessLogic.csproj|solutionrelative:bussinesslogic\\records\\orderrec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2DEBFE6-D34E-41B1-AC9F-5F9FA1667AD9}|DataAccess\\DataAccess.csproj|c:\\project\\eyelashesapi\\dataaccess\\models\\bookingslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2DEBFE6-D34E-41B1-AC9F-5F9FA1667AD9}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\models\\bookingslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2DEBFE6-D34E-41B1-AC9F-5F9FA1667AD9}|DataAccess\\DataAccess.csproj|c:\\project\\eyelashesapi\\dataaccess\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2DEBFE6-D34E-41B1-AC9F-5F9FA1667AD9}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2DEBFE6-D34E-41B1-AC9F-5F9FA1667AD9}|DataAccess\\DataAccess.csproj|c:\\project\\eyelashesapi\\dataaccess\\repositorys\\orderrepository .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2DEBFE6-D34E-41B1-AC9F-5F9FA1667AD9}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\repositorys\\orderrepository .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27FC3CC2-D153-491F-B67C-27E7E5FFBD38}|BussinessLogic\\BussinessLogic.csproj|c:\\project\\eyelashesapi\\bussinesslogic\\extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27FC3CC2-D153-491F-B67C-27E7E5FFBD38}|BussinessLogic\\BussinessLogic.csproj|solutionrelative:bussinesslogic\\extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD391BE2-94AA-4203-8CFA-D44A6634DE52}|EyelashesAPI\\EyelashesAPI.csproj|c:\\project\\eyelashesapi\\eyelashesapi\\configuration\\appconstants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD391BE2-94AA-4203-8CFA-D44A6634DE52}|EyelashesAPI\\EyelashesAPI.csproj|solutionrelative:eyelashesapi\\configuration\\appconstants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD391BE2-94AA-4203-8CFA-D44A6634DE52}|EyelashesAPI\\EyelashesAPI.csproj|c:\\project\\eyelashesapi\\eyelashesapi\\requests\\servicerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD391BE2-94AA-4203-8CFA-D44A6634DE52}|EyelashesAPI\\EyelashesAPI.csproj|solutionrelative:eyelashesapi\\requests\\servicerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD391BE2-94AA-4203-8CFA-D44A6634DE52}|EyelashesAPI\\EyelashesAPI.csproj|c:\\project\\eyelashesapi\\eyelashesapi\\utilities\\imagedownloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD391BE2-94AA-4203-8CFA-D44A6634DE52}|EyelashesAPI\\EyelashesAPI.csproj|solutionrelative:eyelashesapi\\utilities\\imagedownloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD391BE2-94AA-4203-8CFA-D44A6634DE52}|EyelashesAPI\\EyelashesAPI.csproj|c:\\project\\eyelashesapi\\eyelashesapi\\controllers\\servicecontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD391BE2-94AA-4203-8CFA-D44A6634DE52}|EyelashesAPI\\EyelashesAPI.csproj|solutionrelative:eyelashesapi\\controllers\\servicecontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27FC3CC2-D153-491F-B67C-27E7E5FFBD38}|BussinessLogic\\BussinessLogic.csproj|c:\\project\\eyelashesapi\\bussinesslogic\\interfaces\\iaboutmeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27FC3CC2-D153-491F-B67C-27E7E5FFBD38}|BussinessLogic\\BussinessLogic.csproj|solutionrelative:bussinesslogic\\interfaces\\iaboutmeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27FC3CC2-D153-491F-B67C-27E7E5FFBD38}|BussinessLogic\\BussinessLogic.csproj|c:\\project\\eyelashesapi\\bussinesslogic\\interfaces\\iserviceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27FC3CC2-D153-491F-B67C-27E7E5FFBD38}|BussinessLogic\\BussinessLogic.csproj|solutionrelative:bussinesslogic\\interfaces\\iserviceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27FC3CC2-D153-491F-B67C-27E7E5FFBD38}|BussinessLogic\\BussinessLogic.csproj|c:\\project\\eyelashesapi\\bussinesslogic\\records\\aboutmerec .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27FC3CC2-D153-491F-B67C-27E7E5FFBD38}|BussinessLogic\\BussinessLogic.csproj|solutionrelative:bussinesslogic\\records\\aboutmerec .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27FC3CC2-D153-491F-B67C-27E7E5FFBD38}|BussinessLogic\\BussinessLogic.csproj|c:\\project\\eyelashesapi\\bussinesslogic\\records\\servicerec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27FC3CC2-D153-491F-B67C-27E7E5FFBD38}|BussinessLogic\\BussinessLogic.csproj|solutionrelative:bussinesslogic\\records\\servicerec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27FC3CC2-D153-491F-B67C-27E7E5FFBD38}|BussinessLogic\\BussinessLogic.csproj|c:\\project\\eyelashesapi\\bussinesslogic\\services\\aboutmeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27FC3CC2-D153-491F-B67C-27E7E5FFBD38}|BussinessLogic\\BussinessLogic.csproj|solutionrelative:bussinesslogic\\services\\aboutmeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27FC3CC2-D153-491F-B67C-27E7E5FFBD38}|BussinessLogic\\BussinessLogic.csproj|c:\\project\\eyelashesapi\\bussinesslogic\\services\\serviceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27FC3CC2-D153-491F-B67C-27E7E5FFBD38}|BussinessLogic\\BussinessLogic.csproj|solutionrelative:bussinesslogic\\services\\serviceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2DEBFE6-D34E-41B1-AC9F-5F9FA1667AD9}|DataAccess\\DataAccess.csproj|c:\\project\\eyelashesapi\\dataaccess\\interfaces\\iorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2DEBFE6-D34E-41B1-AC9F-5F9FA1667AD9}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\interfaces\\iorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2DEBFE6-D34E-41B1-AC9F-5F9FA1667AD9}|DataAccess\\DataAccess.csproj|c:\\project\\eyelashesapi\\dataaccess\\appcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2DEBFE6-D34E-41B1-AC9F-5F9FA1667AD9}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\appcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2DEBFE6-D34E-41B1-AC9F-5F9FA1667AD9}|DataAccess\\DataAccess.csproj|c:\\project\\eyelashesapi\\dataaccess\\repositorys\\servicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2DEBFE6-D34E-41B1-AC9F-5F9FA1667AD9}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\repositorys\\servicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2DEBFE6-D34E-41B1-AC9F-5F9FA1667AD9}|DataAccess\\DataAccess.csproj|c:\\project\\eyelashesapi\\dataaccess\\repositorys\\aboutmerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2DEBFE6-D34E-41B1-AC9F-5F9FA1667AD9}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\repositorys\\aboutmerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2DEBFE6-D34E-41B1-AC9F-5F9FA1667AD9}|DataAccess\\DataAccess.csproj|c:\\project\\eyelashesapi\\dataaccess\\models\\serviceimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2DEBFE6-D34E-41B1-AC9F-5F9FA1667AD9}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\models\\serviceimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2DEBFE6-D34E-41B1-AC9F-5F9FA1667AD9}|DataAccess\\DataAccess.csproj|c:\\project\\eyelashesapi\\dataaccess\\models\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2DEBFE6-D34E-41B1-AC9F-5F9FA1667AD9}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\models\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2DEBFE6-D34E-41B1-AC9F-5F9FA1667AD9}|DataAccess\\DataAccess.csproj|c:\\project\\eyelashesapi\\dataaccess\\models\\photo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2DEBFE6-D34E-41B1-AC9F-5F9FA1667AD9}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\models\\photo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2DEBFE6-D34E-41B1-AC9F-5F9FA1667AD9}|DataAccess\\DataAccess.csproj|c:\\project\\eyelashesapi\\dataaccess\\models\\aboutme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2DEBFE6-D34E-41B1-AC9F-5F9FA1667AD9}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\models\\aboutme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2DEBFE6-D34E-41B1-AC9F-5F9FA1667AD9}|DataAccess\\DataAccess.csproj|c:\\project\\eyelashesapi\\dataaccess\\interfaces\\iservicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2DEBFE6-D34E-41B1-AC9F-5F9FA1667AD9}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\interfaces\\iservicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD391BE2-94AA-4203-8CFA-D44A6634DE52}|EyelashesAPI\\EyelashesAPI.csproj|c:\\project\\eyelashesapi\\eyelashesapi\\eyelashesapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{DD391BE2-94AA-4203-8CFA-D44A6634DE52}|EyelashesAPI\\EyelashesAPI.csproj|solutionrelative:eyelashesapi\\eyelashesapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD391BE2-94AA-4203-8CFA-D44A6634DE52}|EyelashesAPI\\EyelashesAPI.csproj|c:\\project\\eyelashesapi\\eyelashesapi\\eyelashesapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{DD391BE2-94AA-4203-8CFA-D44A6634DE52}|EyelashesAPI\\EyelashesAPI.csproj|solutionrelative:eyelashesapi\\eyelashesapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Project\\EyelashesAPI\\EyelashesAPI\\Controllers\\OrderController .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EyelashesAPI\\Controllers\\OrderController .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Project\\EyelashesAPI\\EyelashesAPI\\Requests\\OrderRequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EyelashesAPI\\Requests\\OrderRequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Project\\EyelashesAPI\\BussinessLogic\\Interfaces\\IOrderService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BussinessLogic\\Interfaces\\IOrderService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Project\\EyelashesAPI\\BussinessLogic\\Services\\OrderService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BussinessLogic\\Services\\OrderService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ITelegramMessageService.cs",
+              "DocumentMoniker": "C:\\Project\\EyelashesAPI\\EyelashesAPI\\TelegramBot\\ITelegramMessageService.cs",
+              "RelativeDocumentMoniker": "EyelashesAPI\\TelegramBot\\ITelegramMessageService.cs",
+              "ToolTip": "C:\\Project\\EyelashesAPI\\EyelashesAPI\\TelegramBot\\ITelegramMessageService.cs",
+              "RelativeToolTip": "EyelashesAPI\\TelegramBot\\ITelegramMessageService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T18:38:17.181Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TelegramMessageService .cs",
+              "DocumentMoniker": "C:\\Project\\EyelashesAPI\\EyelashesAPI\\TelegramBot\\TelegramMessageService .cs",
+              "RelativeDocumentMoniker": "EyelashesAPI\\TelegramBot\\TelegramMessageService .cs",
+              "ToolTip": "C:\\Project\\EyelashesAPI\\EyelashesAPI\\TelegramBot\\TelegramMessageService .cs",
+              "RelativeToolTip": "EyelashesAPI\\TelegramBot\\TelegramMessageService .cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAUAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T18:27:50.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TelegramBotBackgroundService.cs",
+              "DocumentMoniker": "C:\\Project\\EyelashesAPI\\EyelashesAPI\\TelegramBot\\TelegramBotBackgroundService.cs",
+              "RelativeDocumentMoniker": "EyelashesAPI\\TelegramBot\\TelegramBotBackgroundService.cs",
+              "ToolTip": "C:\\Project\\EyelashesAPI\\EyelashesAPI\\TelegramBot\\TelegramBotBackgroundService.cs",
+              "RelativeToolTip": "EyelashesAPI\\TelegramBot\\TelegramBotBackgroundService.cs",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAswH4AAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T17:02:37.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AboutMeController.cs",
+              "DocumentMoniker": "C:\\Project\\EyelashesAPI\\EyelashesAPI\\Controllers\\AboutMeController.cs",
+              "RelativeDocumentMoniker": "EyelashesAPI\\Controllers\\AboutMeController.cs",
+              "ToolTip": "C:\\Project\\EyelashesAPI\\EyelashesAPI\\Controllers\\AboutMeController.cs",
+              "RelativeToolTip": "EyelashesAPI\\Controllers\\AboutMeController.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAUwEsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T12:47:44.231Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Project\\EyelashesAPI\\EyelashesAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "EyelashesAPI\\appsettings.json",
+              "ToolTip": "C:\\Project\\EyelashesAPI\\EyelashesAPI\\appsettings.json",
+              "RelativeToolTip": "EyelashesAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-26T18:50:03.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Project\\EyelashesAPI\\EyelashesAPI\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "EyelashesAPI\\appsettings.Development.json",
+              "ToolTip": "C:\\Project\\EyelashesAPI\\EyelashesAPI\\appsettings.Development.json",
+              "RelativeToolTip": "EyelashesAPI\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-27T10:35:33.407Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Project\\EyelashesAPI\\EyelashesAPI\\Program.cs",
+              "RelativeDocumentMoniker": "EyelashesAPI\\Program.cs",
+              "ToolTip": "C:\\Project\\EyelashesAPI\\EyelashesAPI\\Program.cs",
+              "RelativeToolTip": "EyelashesAPI\\Program.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAywCAAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-26T18:39:46.63Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TelegramOptions.cs",
+              "DocumentMoniker": "C:\\Project\\EyelashesAPI\\EyelashesAPI\\TelegramBot\\Options\\TelegramOptions.cs",
+              "RelativeDocumentMoniker": "EyelashesAPI\\TelegramBot\\Options\\TelegramOptions.cs",
+              "ToolTip": "C:\\Project\\EyelashesAPI\\EyelashesAPI\\TelegramBot\\Options\\TelegramOptions.cs",
+              "RelativeToolTip": "EyelashesAPI\\TelegramBot\\Options\\TelegramOptions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T17:16:31.681Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AboutMeRequest.cs",
+              "DocumentMoniker": "C:\\Project\\EyelashesAPI\\EyelashesAPI\\Requests\\AboutMeRequest.cs",
+              "RelativeDocumentMoniker": "EyelashesAPI\\Requests\\AboutMeRequest.cs",
+              "ToolTip": "C:\\Project\\EyelashesAPI\\EyelashesAPI\\Requests\\AboutMeRequest.cs",
+              "RelativeToolTip": "EyelashesAPI\\Requests\\AboutMeRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T12:49:57.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IBookingCalendarRepository.cs",
+              "DocumentMoniker": "C:\\Project\\EyelashesAPI\\DataAccess\\Interfaces\\IBookingCalendarRepository.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Interfaces\\IBookingCalendarRepository.cs",
+              "ToolTip": "C:\\Project\\EyelashesAPI\\DataAccess\\Interfaces\\IBookingCalendarRepository.cs",
+              "RelativeToolTip": "DataAccess\\Interfaces\\IBookingCalendarRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T18:32:14.98Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Extensions.cs",
+              "DocumentMoniker": "C:\\Project\\EyelashesAPI\\DataAccess\\Extensions.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Extensions.cs",
+              "ToolTip": "C:\\Project\\EyelashesAPI\\DataAccess\\Extensions.cs",
+              "RelativeToolTip": "DataAccess\\Extensions.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAIAwwBUAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T10:36:38.908Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IAboutMeRepository.cs",
+              "DocumentMoniker": "C:\\Project\\EyelashesAPI\\DataAccess\\Interfaces\\IAboutMeRepository.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Interfaces\\IAboutMeRepository.cs",
+              "ToolTip": "C:\\Project\\EyelashesAPI\\DataAccess\\Interfaces\\IAboutMeRepository.cs",
+              "RelativeToolTip": "DataAccess\\Interfaces\\IAboutMeRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T12:00:31.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BookingSlotRec.cs",
+              "DocumentMoniker": "C:\\Project\\EyelashesAPI\\BussinessLogic\\Records\\BookingSlotRec.cs",
+              "RelativeDocumentMoniker": "BussinessLogic\\Records\\BookingSlotRec.cs",
+              "ToolTip": "C:\\Project\\EyelashesAPI\\BussinessLogic\\Records\\BookingSlotRec.cs",
+              "RelativeToolTip": "BussinessLogic\\Records\\BookingSlotRec.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAiwA4AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T18:30:15.131Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IBookingCalendarService.cs",
+              "DocumentMoniker": "C:\\Project\\EyelashesAPI\\BussinessLogic\\Interfaces\\IBookingCalendarService.cs",
+              "RelativeDocumentMoniker": "BussinessLogic\\Interfaces\\IBookingCalendarService.cs",
+              "ToolTip": "C:\\Project\\EyelashesAPI\\BussinessLogic\\Interfaces\\IBookingCalendarService.cs",
+              "RelativeToolTip": "BussinessLogic\\Interfaces\\IBookingCalendarService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T13:03:00.589Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "BookingSlotRequest.cs",
+              "DocumentMoniker": "C:\\Project\\EyelashesAPI\\EyelashesAPI\\Requests\\BookingSlotRequest.cs",
+              "RelativeDocumentMoniker": "EyelashesAPI\\Requests\\BookingSlotRequest.cs",
+              "ToolTip": "C:\\Project\\EyelashesAPI\\EyelashesAPI\\Requests\\BookingSlotRequest.cs",
+              "RelativeToolTip": "EyelashesAPI\\Requests\\BookingSlotRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T18:38:28.086Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BookingCalendarController .cs",
+              "DocumentMoniker": "C:\\Project\\EyelashesAPI\\EyelashesAPI\\Controllers\\BookingCalendarController .cs",
+              "RelativeDocumentMoniker": "EyelashesAPI\\Controllers\\BookingCalendarController .cs",
+              "ToolTip": "C:\\Project\\EyelashesAPI\\EyelashesAPI\\Controllers\\BookingCalendarController .cs",
+              "RelativeToolTip": "EyelashesAPI\\Controllers\\BookingCalendarController .cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAkwFoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T18:39:11.469Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "BookingCalendarService .cs",
+              "DocumentMoniker": "C:\\Project\\EyelashesAPI\\BussinessLogic\\Services\\BookingCalendarService .cs",
+              "RelativeDocumentMoniker": "BussinessLogic\\Services\\BookingCalendarService .cs",
+              "ToolTip": "C:\\Project\\EyelashesAPI\\BussinessLogic\\Services\\BookingCalendarService .cs",
+              "RelativeToolTip": "BussinessLogic\\Services\\BookingCalendarService .cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAkwDkAAAB+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T18:31:51.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "BookingCalendarRepository .cs",
+              "DocumentMoniker": "C:\\Project\\EyelashesAPI\\DataAccess\\Repositorys\\BookingCalendarRepository .cs",
+              "RelativeDocumentMoniker": "DataAccess\\Repositorys\\BookingCalendarRepository .cs",
+              "ToolTip": "C:\\Project\\EyelashesAPI\\DataAccess\\Repositorys\\BookingCalendarRepository .cs",
+              "RelativeToolTip": "DataAccess\\Repositorys\\BookingCalendarRepository .cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAIwF4AAAB7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T15:25:33.626Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "BookingCalendarRec.cs",
+              "DocumentMoniker": "C:\\Project\\EyelashesAPI\\BussinessLogic\\Records\\BookingCalendarRec.cs",
+              "RelativeDocumentMoniker": "BussinessLogic\\Records\\BookingCalendarRec.cs",
+              "ToolTip": "C:\\Project\\EyelashesAPI\\BussinessLogic\\Records\\BookingCalendarRec.cs",
+              "RelativeToolTip": "BussinessLogic\\Records\\BookingCalendarRec.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T13:05:03.335Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "BookingCalendar.cs",
+              "DocumentMoniker": "C:\\Project\\EyelashesAPI\\DataAccess\\Models\\BookingCalendar.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Models\\BookingCalendar.cs",
+              "ToolTip": "C:\\Project\\EyelashesAPI\\DataAccess\\Models\\BookingCalendar.cs",
+              "RelativeToolTip": "DataAccess\\Models\\BookingCalendar.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T15:23:46.974Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "OrderRec.cs",
+              "DocumentMoniker": "C:\\Project\\EyelashesAPI\\BussinessLogic\\Records\\OrderRec.cs",
+              "RelativeDocumentMoniker": "BussinessLogic\\Records\\OrderRec.cs",
+              "ToolTip": "C:\\Project\\EyelashesAPI\\BussinessLogic\\Records\\OrderRec.cs",
+              "RelativeToolTip": "BussinessLogic\\Records\\OrderRec.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T18:16:05.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "BookingSlot.cs",
+              "DocumentMoniker": "C:\\Project\\EyelashesAPI\\DataAccess\\Models\\BookingSlot.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Models\\BookingSlot.cs",
+              "ToolTip": "C:\\Project\\EyelashesAPI\\DataAccess\\Models\\BookingSlot.cs",
+              "RelativeToolTip": "DataAccess\\Models\\BookingSlot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T15:24:13.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Project\\EyelashesAPI\\DataAccess\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Models\\Order.cs",
+              "ToolTip": "C:\\Project\\EyelashesAPI\\DataAccess\\Models\\Order.cs",
+              "RelativeToolTip": "DataAccess\\Models\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T13:51:01.467Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "OrderRepository .cs",
+              "DocumentMoniker": "C:\\Project\\EyelashesAPI\\DataAccess\\Repositorys\\OrderRepository .cs",
+              "RelativeDocumentMoniker": "DataAccess\\Repositorys\\OrderRepository .cs",
+              "ToolTip": "C:\\Project\\EyelashesAPI\\DataAccess\\Repositorys\\OrderRepository .cs",
+              "RelativeToolTip": "DataAccess\\Repositorys\\OrderRepository .cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T13:52:02.124Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "OrderController .cs",
+              "DocumentMoniker": "C:\\Project\\EyelashesAPI\\EyelashesAPI\\Controllers\\OrderController .cs",
+              "RelativeDocumentMoniker": "EyelashesAPI\\Controllers\\OrderController .cs",
+              "ToolTip": "C:\\Project\\EyelashesAPI\\EyelashesAPI\\Controllers\\OrderController .cs",
+              "RelativeToolTip": "EyelashesAPI\\Controllers\\OrderController .cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T18:21:41.801Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ServiceRequest.cs",
+              "DocumentMoniker": "C:\\Project\\EyelashesAPI\\EyelashesAPI\\Requests\\ServiceRequest.cs",
+              "RelativeDocumentMoniker": "EyelashesAPI\\Requests\\ServiceRequest.cs",
+              "ToolTip": "C:\\Project\\EyelashesAPI\\EyelashesAPI\\Requests\\ServiceRequest.cs",
+              "RelativeToolTip": "EyelashesAPI\\Requests\\ServiceRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T12:24:25.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Extensions.cs",
+              "DocumentMoniker": "C:\\Project\\EyelashesAPI\\BussinessLogic\\Extensions.cs",
+              "RelativeDocumentMoniker": "BussinessLogic\\Extensions.cs",
+              "ToolTip": "C:\\Project\\EyelashesAPI\\BussinessLogic\\Extensions.cs",
+              "RelativeToolTip": "BussinessLogic\\Extensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBIAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T12:42:08.506Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "OrderRequest.cs",
+              "DocumentMoniker": "C:\\Project\\EyelashesAPI\\EyelashesAPI\\Requests\\OrderRequest.cs",
+              "RelativeDocumentMoniker": "EyelashesAPI\\Requests\\OrderRequest.cs",
+              "ToolTip": "C:\\Project\\EyelashesAPI\\EyelashesAPI\\Requests\\OrderRequest.cs",
+              "RelativeToolTip": "EyelashesAPI\\Requests\\OrderRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T18:23:49.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "AppConstants.cs",
+              "DocumentMoniker": "C:\\Project\\EyelashesAPI\\EyelashesAPI\\Configuration\\AppConstants.cs",
+              "RelativeDocumentMoniker": "EyelashesAPI\\Configuration\\AppConstants.cs",
+              "ToolTip": "C:\\Project\\EyelashesAPI\\EyelashesAPI\\Configuration\\AppConstants.cs",
+              "RelativeToolTip": "EyelashesAPI\\Configuration\\AppConstants.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T16:58:14.383Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ImageDownloader.cs",
+              "DocumentMoniker": "C:\\Project\\EyelashesAPI\\EyelashesAPI\\Utilities\\ImageDownloader.cs",
+              "RelativeDocumentMoniker": "EyelashesAPI\\Utilities\\ImageDownloader.cs",
+              "ToolTip": "C:\\Project\\EyelashesAPI\\EyelashesAPI\\Utilities\\ImageDownloader.cs",
+              "RelativeToolTip": "EyelashesAPI\\Utilities\\ImageDownloader.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T16:56:43.899Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ServiceController .cs",
+              "DocumentMoniker": "C:\\Project\\EyelashesAPI\\EyelashesAPI\\Controllers\\ServiceController .cs",
+              "RelativeDocumentMoniker": "EyelashesAPI\\Controllers\\ServiceController .cs",
+              "ToolTip": "C:\\Project\\EyelashesAPI\\EyelashesAPI\\Controllers\\ServiceController .cs",
+              "RelativeToolTip": "EyelashesAPI\\Controllers\\ServiceController .cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T12:23:56.303Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "IAboutMeService.cs",
+              "DocumentMoniker": "C:\\Project\\EyelashesAPI\\BussinessLogic\\Interfaces\\IAboutMeService.cs",
+              "RelativeDocumentMoniker": "BussinessLogic\\Interfaces\\IAboutMeService.cs",
+              "ToolTip": "C:\\Project\\EyelashesAPI\\BussinessLogic\\Interfaces\\IAboutMeService.cs",
+              "RelativeToolTip": "BussinessLogic\\Interfaces\\IAboutMeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T12:06:36.447Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "IOrderService.cs",
+              "DocumentMoniker": "C:\\Project\\EyelashesAPI\\BussinessLogic\\Interfaces\\IOrderService.cs",
+              "RelativeDocumentMoniker": "BussinessLogic\\Interfaces\\IOrderService.cs",
+              "ToolTip": "C:\\Project\\EyelashesAPI\\BussinessLogic\\Interfaces\\IOrderService.cs",
+              "RelativeToolTip": "BussinessLogic\\Interfaces\\IOrderService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T18:15:32.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "IServiceService.cs",
+              "DocumentMoniker": "C:\\Project\\EyelashesAPI\\BussinessLogic\\Interfaces\\IServiceService.cs",
+              "RelativeDocumentMoniker": "BussinessLogic\\Interfaces\\IServiceService.cs",
+              "ToolTip": "C:\\Project\\EyelashesAPI\\BussinessLogic\\Interfaces\\IServiceService.cs",
+              "RelativeToolTip": "BussinessLogic\\Interfaces\\IServiceService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T12:19:49.689Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "AboutMeRec .cs",
+              "DocumentMoniker": "C:\\Project\\EyelashesAPI\\BussinessLogic\\Records\\AboutMeRec .cs",
+              "RelativeDocumentMoniker": "BussinessLogic\\Records\\AboutMeRec .cs",
+              "ToolTip": "C:\\Project\\EyelashesAPI\\BussinessLogic\\Records\\AboutMeRec .cs",
+              "RelativeToolTip": "BussinessLogic\\Records\\AboutMeRec .cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T12:20:24.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ServiceRec.cs",
+              "DocumentMoniker": "C:\\Project\\EyelashesAPI\\BussinessLogic\\Records\\ServiceRec.cs",
+              "RelativeDocumentMoniker": "BussinessLogic\\Records\\ServiceRec.cs",
+              "ToolTip": "C:\\Project\\EyelashesAPI\\BussinessLogic\\Records\\ServiceRec.cs",
+              "RelativeToolTip": "BussinessLogic\\Records\\ServiceRec.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T12:19:20.635Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "AboutMeService.cs",
+              "DocumentMoniker": "C:\\Project\\EyelashesAPI\\BussinessLogic\\Services\\AboutMeService.cs",
+              "RelativeDocumentMoniker": "BussinessLogic\\Services\\AboutMeService.cs",
+              "ToolTip": "C:\\Project\\EyelashesAPI\\BussinessLogic\\Services\\AboutMeService.cs",
+              "RelativeToolTip": "BussinessLogic\\Services\\AboutMeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T12:09:58.023Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "ServiceService.cs",
+              "DocumentMoniker": "C:\\Project\\EyelashesAPI\\BussinessLogic\\Services\\ServiceService.cs",
+              "RelativeDocumentMoniker": "BussinessLogic\\Services\\ServiceService.cs",
+              "ToolTip": "C:\\Project\\EyelashesAPI\\BussinessLogic\\Services\\ServiceService.cs",
+              "RelativeToolTip": "BussinessLogic\\Services\\ServiceService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAG8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T12:17:55.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "C:\\Project\\EyelashesAPI\\BussinessLogic\\Services\\OrderService.cs",
+              "RelativeDocumentMoniker": "BussinessLogic\\Services\\OrderService.cs",
+              "ToolTip": "C:\\Project\\EyelashesAPI\\BussinessLogic\\Services\\OrderService.cs",
+              "RelativeToolTip": "BussinessLogic\\Services\\OrderService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T18:14:47.123Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "IOrderRepository.cs",
+              "DocumentMoniker": "C:\\Project\\EyelashesAPI\\DataAccess\\Interfaces\\IOrderRepository.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Interfaces\\IOrderRepository.cs",
+              "ToolTip": "C:\\Project\\EyelashesAPI\\DataAccess\\Interfaces\\IOrderRepository.cs",
+              "RelativeToolTip": "DataAccess\\Interfaces\\IOrderRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T18:17:16.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Photo.cs",
+              "DocumentMoniker": "C:\\Project\\EyelashesAPI\\DataAccess\\Models\\Photo.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Models\\Photo.cs",
+              "ToolTip": "C:\\Project\\EyelashesAPI\\DataAccess\\Models\\Photo.cs",
+              "RelativeToolTip": "DataAccess\\Models\\Photo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T10:27:32.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "AppContext.cs",
+              "DocumentMoniker": "C:\\Project\\EyelashesAPI\\DataAccess\\AppContext.cs",
+              "RelativeDocumentMoniker": "DataAccess\\AppContext.cs",
+              "ToolTip": "C:\\Project\\EyelashesAPI\\DataAccess\\AppContext.cs",
+              "RelativeToolTip": "DataAccess\\AppContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T10:34:06.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "ServiceRepository.cs",
+              "DocumentMoniker": "C:\\Project\\EyelashesAPI\\DataAccess\\Repositorys\\ServiceRepository.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Repositorys\\ServiceRepository.cs",
+              "ToolTip": "C:\\Project\\EyelashesAPI\\DataAccess\\Repositorys\\ServiceRepository.cs",
+              "RelativeToolTip": "DataAccess\\Repositorys\\ServiceRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T12:11:10.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "AboutMeRepository.cs",
+              "DocumentMoniker": "C:\\Project\\EyelashesAPI\\DataAccess\\Repositorys\\AboutMeRepository.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Repositorys\\AboutMeRepository.cs",
+              "ToolTip": "C:\\Project\\EyelashesAPI\\DataAccess\\Repositorys\\AboutMeRepository.cs",
+              "RelativeToolTip": "DataAccess\\Repositorys\\AboutMeRepository.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T12:02:13.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "ServiceImage.cs",
+              "DocumentMoniker": "C:\\Project\\EyelashesAPI\\DataAccess\\Models\\ServiceImage.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Models\\ServiceImage.cs",
+              "ToolTip": "C:\\Project\\EyelashesAPI\\DataAccess\\Models\\ServiceImage.cs",
+              "RelativeToolTip": "DataAccess\\Models\\ServiceImage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T12:10:17.46Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Service.cs",
+              "DocumentMoniker": "C:\\Project\\EyelashesAPI\\DataAccess\\Models\\Service.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Models\\Service.cs",
+              "ToolTip": "C:\\Project\\EyelashesAPI\\DataAccess\\Models\\Service.cs",
+              "RelativeToolTip": "DataAccess\\Models\\Service.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T12:09:53.563Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "AboutMe.cs",
+              "DocumentMoniker": "C:\\Project\\EyelashesAPI\\DataAccess\\Models\\AboutMe.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Models\\AboutMe.cs",
+              "ToolTip": "C:\\Project\\EyelashesAPI\\DataAccess\\Models\\AboutMe.cs",
+              "RelativeToolTip": "DataAccess\\Models\\AboutMe.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T10:27:21.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "IServiceRepository.cs",
+              "DocumentMoniker": "C:\\Project\\EyelashesAPI\\DataAccess\\Interfaces\\IServiceRepository.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Interfaces\\IServiceRepository.cs",
+              "ToolTip": "C:\\Project\\EyelashesAPI\\DataAccess\\Interfaces\\IServiceRepository.cs",
+              "RelativeToolTip": "DataAccess\\Interfaces\\IServiceRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T12:11:53.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "EyelashesAPI.http",
+              "DocumentMoniker": "C:\\Project\\EyelashesAPI\\EyelashesAPI\\EyelashesAPI.http",
+              "RelativeDocumentMoniker": "EyelashesAPI\\EyelashesAPI.http",
+              "ToolTip": "C:\\Project\\EyelashesAPI\\EyelashesAPI\\EyelashesAPI.http",
+              "RelativeToolTip": "EyelashesAPI\\EyelashesAPI.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-01-27T10:27:47.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "EyelashesAPI.csproj",
+              "DocumentMoniker": "C:\\Project\\EyelashesAPI\\EyelashesAPI\\EyelashesAPI.csproj",
+              "RelativeDocumentMoniker": "EyelashesAPI\\EyelashesAPI.csproj",
+              "ToolTip": "C:\\Project\\EyelashesAPI\\EyelashesAPI\\EyelashesAPI.csproj",
+              "RelativeToolTip": "EyelashesAPI\\EyelashesAPI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-26T19:07:59.075Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

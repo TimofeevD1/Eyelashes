@@ -1,0 +1,6 @@
+﻿services:
+  eyelashesapi:
+    image: eyelashesapi
+    build:
+      context: .
+      dockerfile: EyelashesAPI/Dockerfile

@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,
+html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow-y: auto;
+	font-family: 'Arial', sans-serif;
+	background-color: #fff1f5; /* Светло-розовый фон */
+	position: relative;
+}
+
+/* Основной фон */
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow-y: auto;
+	font-family: 'Arial', sans-serif;
+	background-color: #fff1f5; /* Светло-розовый фон */
+	position: relative;
+}
+
+/* Стили для кругов */
+body .circle {
+	position: absolute;
+	background: rgba(255, 255, 255, 0.35); /* Прозрачный белый */
+	border-radius: 50%; /* Создаем круглую форму */
+	z-index: -1; /* Круги будут за основным контентом */
+	transition: all 0.5s ease-in-out;
+}
+
+/* Основной контейнер для страницы */
+.App {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 100vh;
+	position: relative;
+	z-index: 1;
+	max-width: 100%;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}

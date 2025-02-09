@@ -1,0 +1,14 @@
+@media (max-width: 768px) {
+	.modal-content {
+		width: 95vw; /* уменьшаем ширину окна */
+		height: 70vh; /* уменьшаем высоту окна */
+	}
+
+	.modal-content img {
+		max-height: 60vh; /* уменьшаем максимальную высоту изображения */
+	}
+
+	.thumbnail-container {
+		max-height: 100px; /* уменьшаем высоту миниатюр */
+	}
+}

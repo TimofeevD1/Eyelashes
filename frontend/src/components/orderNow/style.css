@@ -1,0 +1,112 @@
+#ordernow {
+	position: relative;
+	z-index: 1; /* Убедитесь, что родитель имеет нормальный z-index */
+}
+
+/* Анимация появления */
+@keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		transform: translateY(30px); /* Начальная позиция ниже */
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0); /* Конечная позиция — на своем месте */
+	}
+}
+
+/* Применяем анимацию к элементу */
+.fade-in {
+	animation: fadeInUp 0.8s ease-out forwards; /* Длительность анимации 0.8 секунд */
+}
+
+/* Основное уведомление */
+.notification {
+	position: fixed;
+	width: 100%;
+	max-width: 320px;
+	padding: 16px;
+	border-radius: 12px;
+	color: white;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	animation: slideInUp 0.3s ease-out;
+}
+
+/* Уведомление для успешных сообщений */
+.notification.success {
+	z-index: 9999;
+	background: linear-gradient(to right, #34d399, #10b981);
+}
+
+/* Уведомление для ошибок */
+.notification.error {
+	z-index: 9999;
+	background: linear-gradient(to right, #fca5a5, #ef4444);
+}
+
+/* Анимация для появления уведомления */
+@keyframes slideInUp {
+	0% {
+		transform: translateY(100%);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+	.notification {
+		top: 16px;
+		right: 16px;
+		bottom: initial;
+		left: initial;
+	}
+}
+
+/* Уведомление для десктопных устройств */
+@media (min-width: 769px) {
+	.notification {
+		bottom: 6px;
+		right: 6px;
+		top: initial;
+		left: initial;
+	}
+}
+
+/* Стиль для всего календаря */
+.react-datepicker {
+	position: relative !important;
+	z-index: 9999;
+}
+
+/* Для выбранного дня */
+.react-datepicker__day--selected {
+	z-index: 3;
+	pointer-events: auto;
+	background-color: #9b6be6; /* Цвет для выбранного дня */
+	color: white;
+}
+
+/* Для шапки календаря */
+.react-datepicker__header {
+	background-color: #9b6be6;
+	color: white;
+}
+
+/* Для дней, которые доступны */
+.react-datepicker__day--available {
+	z-index: 2;
+	pointer-events: auto; /* Разрешаем клики по доступным дням */
+	background-color: rgba(255, 200, 83, 0.6);
+	color: black;
+	cursor: pointer; /* Убедимся, что курсор меняется на указатель */
+}
+
+/* Для недоступных дней */
+.react-datepicker__day--disabled {
+	pointer-events: none; /* Отключаем клики по недоступным дням */
+	background-color: rgba(255, 107, 107, 0.05);
+	color: gray;
+	cursor: not-allowed; /* Убедимся, что курсор меняется на запрещенный */
+}
