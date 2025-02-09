@@ -1,0 +1,47 @@
+# --- ЛОГИ (общие) ---
+logs/
+*.log
+**/npm-debug.log*
+**/yarn-debug.log*
+**/pnpm-debug.log*
+**/lerna-debug.log*
+
+# --- FRONTEND (React) ---
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/.env
+frontend/.env.local
+frontend/.next/
+frontend/out/
+frontend/.cache/
+frontend/logs/
+frontend/*.log
+
+# --- BACKEND (C# .NET) ---
+backend/bin/
+backend/obj/
+backend/*.suo
+backend/*.user
+backend/*.cache
+backend/*.csproj.user
+backend/logs/
+backend/*.log
+
+# --- IGNORE CONFIG FILES ---
+*.local
+.env
+.env.local
+.env.*.local
+
+# --- IDE / РЕДАКТОРЫ ---
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.sln
+*.suo
+*.ntvs*
+*.njsproj
+*.sw?
+.DS_Store
+Thumbs.db
