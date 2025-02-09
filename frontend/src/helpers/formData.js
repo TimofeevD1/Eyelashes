@@ -16,7 +16,7 @@ export const formData = {
 	],
 	getAvailableTimes: date => {
 		if (date.toDateString() === new Date('2025-01-21').toDateString()) {
-			return ['10:00', '12:00', '14:00']
+			return ['11:00', '12:00', '14:00']
 		} else if (date.toDateString() === new Date('2025-01-22').toDateString()) {
 			return ['11:00', '13:00', '15:00']
 		} else {
