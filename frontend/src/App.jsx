@@ -13,6 +13,7 @@ import './styles/main.css'
 import aboutMeData from './helpers/aboutMeData'
 import services from './helpers/services'
 import location from './helpers/location'
+import AboutMeContainer from './сontainers/AboutMeContainer'
 
 function App() {
 	const orderNowRef = useRef(null)
@@ -85,12 +86,8 @@ function App() {
 					<OrderNow />
 				</div>
 
-				<div className='p-8'>
-					<AboutMeSection
-						scrollToOrderNow={scrollToOrderNow}
-						aboutMeData={aboutMeData}
-					/>
-				</div>
+				<AboutMeContainer scrollToOrderNow={scrollToOrderNow} />
+
 				<div className='p-8'>
 					<ServicesSection
 						scrollToOrderNow={scrollToOrderNow}

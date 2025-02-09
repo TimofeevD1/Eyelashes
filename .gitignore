@@ -19,8 +19,8 @@ frontend/logs/
 frontend/*.log
 
 # --- BACKEND (C# .NET) ---
-backend/bin/
-backend/obj/
+backend/**/bin/
+backend/**/obj/
 backend/*.suo
 backend/*.user
 backend/*.cache

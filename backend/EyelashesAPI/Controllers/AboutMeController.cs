@@ -68,18 +68,6 @@ namespace EyelashesAPI.Controllers
             }
 
 
-            var mainImageFilePath = await ImageDownloader.DownloadImageAsync(_httpClient, aboutMeRequest.MainImageUrl, cancellationToken);
-
-            var photoUrls = new List<string>();
-
-            if (aboutMeRequest.AdditionalPhotoUrls != null && aboutMeRequest.AdditionalPhotoUrls.Count > 0)
-            {
-                foreach (var photoUrl in aboutMeRequest.AdditionalPhotoUrls)
-                {
-                    var filePath = await ImageDownloader.DownloadImageAsync(_httpClient, photoUrl, cancellationToken);
-                    photoUrls.Add(filePath);
-                }
-            }
 
             var aboutMe = new AboutMeRec
             {
@@ -89,8 +77,8 @@ namespace EyelashesAPI.Controllers
                 PhoneNumber = aboutMeRequest.PhoneNumber,
                 Coordinates = new NpgsqlTypes.NpgsqlPoint(aboutMeRequest.X, aboutMeRequest.Y),
                 Description = aboutMeRequest.Description,
-                MainImagePath = mainImageFilePath,
-                AdditionalPhotosPath = photoUrls
+                MainImagePath = aboutMeRequest.MainImageUrl,
+                AdditionalPhotosPath = aboutMeRequest.AdditionalPhotoUrls
             };
 
             await _aboutMeService.CreateAsync(aboutMe, cancellationToken);
@@ -113,9 +101,9 @@ namespace EyelashesAPI.Controllers
             {
                 return NotFound($"AboutMe with ID {id} not found.");
             } 
-            var mainImageFilePath = string.IsNullOrEmpty(aboutMeRequest.MainImageUrl)
+            var mainImageFilePath = string.IsNullOrEmpty(aboutMeRequest.MainImageUrl) 
                 ? existingAboutMe.MainImagePath
-                : await ImageDownloader.DownloadImageAsync(_httpClient, aboutMeRequest.MainImageUrl, cancellationToken);
+                : aboutMeRequest.MainImageUrl;
 
             var photoUrls = existingAboutMe.AdditionalPhotosPath; 
 
@@ -127,8 +115,7 @@ namespace EyelashesAPI.Controllers
                 {
                     if (!string.IsNullOrEmpty(photoUrl)) 
                     {
-                        var filePath = await ImageDownloader.DownloadImageAsync(_httpClient, photoUrl, cancellationToken);
-                        photoUrlsCurrent.Add(filePath);
+                        photoUrlsCurrent.Add(photoUrl);
                     }
                 }
 
@@ -178,8 +165,7 @@ namespace EyelashesAPI.Controllers
             {
                 if (!string.IsNullOrEmpty(photoUrl))
                 {
-                    var filePath = await ImageDownloader.DownloadImageAsync(_httpClient, photoUrl, cancellationToken);
-                    photoUrlsCurrent.Add(filePath);
+                    photoUrlsCurrent.Add(photoUrl);
                 }
             }
             await _aboutMeService.AddPhotosAsync(id, photoUrlsCurrent, cancellationToken);

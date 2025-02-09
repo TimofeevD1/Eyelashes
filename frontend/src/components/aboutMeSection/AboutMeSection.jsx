@@ -3,7 +3,14 @@ import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import ModalGallery from './../modalGallery/ModalGallery'
 
-const AboutMeSection = ({ scrollToOrderNow, aboutMeData }) => {
+const AboutMeSection = ({
+	scrollToOrderNow,
+	fullName,
+	job,
+	description,
+	mainImagePath,
+	additionalPhotosPath,
+}) => {
 	const { ref: sectionRef, inView } = useInView({
 		triggerOnce: true,
 		threshold: 0.2,
@@ -15,7 +22,7 @@ const AboutMeSection = ({ scrollToOrderNow, aboutMeData }) => {
 	return (
 		<>
 			<ModalGallery
-				images={aboutMeData.photogallery}
+				images={additionalPhotosPath}
 				isOpen={isModalOpen}
 				onClose={handleModalToggle}
 			/>
@@ -62,11 +69,11 @@ const AboutMeSection = ({ scrollToOrderNow, aboutMeData }) => {
 					>
 						<h2 className='text-5xl font-extrabold text-gray-800 mb-6'>
 							<span className='relative inline-block text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-500'>
-								{aboutMeData.title}
+								Обо мне
 							</span>
 						</h2>
 						<p className='text-lg text-gray-700 mb-6 leading-relaxed'>
-							{aboutMeData.description}
+							{description}
 						</p>
 						<div className='flex space-x-4'>
 							<button
@@ -95,15 +102,15 @@ const AboutMeSection = ({ scrollToOrderNow, aboutMeData }) => {
 					>
 						<div className='group relative'>
 							<img
-								src={aboutMeData.image}
+								src={mainImagePath}
 								alt='Тимофеева Юлия'
 								className='w-full rounded-lg shadow-lg transform transition duration-300 group-hover:scale-105'
 							/>
 							<div className='absolute bottom-4 left-4 bg-white bg-opacity-80 p-4 rounded-lg shadow-md'>
 								<h3 className='text-lg font-semibold text-gray-800'>
-									{aboutMeData.fullName}
+									{fullName}
 								</h3>
-								<p className='text-sm text-gray-600'>{aboutMeData.job}</p>
+								<p className='text-sm text-gray-600'>{job}</p>
 							</div>
 						</div>
 					</motion.div>
