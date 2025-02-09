@@ -27,6 +27,8 @@ backend/*.cache
 backend/*.csproj.user
 backend/logs/
 backend/*.log
+backend/.vs/
+
 
 # --- IGNORE CONFIG FILES ---
 *.local

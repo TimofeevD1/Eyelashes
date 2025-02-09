@@ -3456,11 +3456,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Project\\EyelashesAPI\\EyelashesAPI\\EyelashesAPI.csproj",
+      "projectUniqueName": "C:\\Project\\EyelashesApp\\backend\\EyelashesAPI\\EyelashesAPI.csproj",
       "projectName": "EyelashesAPI",
-      "projectPath": "C:\\Project\\EyelashesAPI\\EyelashesAPI\\EyelashesAPI.csproj",
+      "projectPath": "C:\\Project\\EyelashesApp\\backend\\EyelashesAPI\\EyelashesAPI.csproj",
       "packagesPath": "C:\\Users\\Даниил\\.nuget\\packages\\",
-      "outputPath": "C:\\Project\\EyelashesAPI\\EyelashesAPI\\obj\\",
+      "outputPath": "C:\\Project\\EyelashesApp\\backend\\EyelashesAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3482,11 +3482,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Project\\EyelashesAPI\\BussinessLogic\\BussinessLogic.csproj": {
-              "projectPath": "C:\\Project\\EyelashesAPI\\BussinessLogic\\BussinessLogic.csproj"
+            "C:\\Project\\EyelashesApp\\backend\\BussinessLogic\\BussinessLogic.csproj": {
+              "projectPath": "C:\\Project\\EyelashesApp\\backend\\BussinessLogic\\BussinessLogic.csproj"
             },
-            "C:\\Project\\EyelashesAPI\\DataAccess\\DataAccess.csproj": {
-              "projectPath": "C:\\Project\\EyelashesAPI\\DataAccess\\DataAccess.csproj"
+            "C:\\Project\\EyelashesApp\\backend\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "C:\\Project\\EyelashesApp\\backend\\DataAccess\\DataAccess.csproj"
             }
           }
         }

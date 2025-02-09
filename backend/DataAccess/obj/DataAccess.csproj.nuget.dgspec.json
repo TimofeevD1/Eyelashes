@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Project\\EyelashesAPI\\DataAccess\\DataAccess.csproj": {}
+    "C:\\Project\\EyelashesApp\\backend\\DataAccess\\DataAccess.csproj": {}
   },
   "projects": {
-    "C:\\Project\\EyelashesAPI\\DataAccess\\DataAccess.csproj": {
+    "C:\\Project\\EyelashesApp\\backend\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Project\\EyelashesAPI\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "C:\\Project\\EyelashesApp\\backend\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Project\\EyelashesAPI\\DataAccess\\DataAccess.csproj",
+        "projectPath": "C:\\Project\\EyelashesApp\\backend\\DataAccess\\DataAccess.csproj",
         "packagesPath": "C:\\Users\\Даниил\\.nuget\\packages\\",
-        "outputPath": "C:\\Project\\EyelashesAPI\\DataAccess\\obj\\",
+        "outputPath": "C:\\Project\\EyelashesApp\\backend\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
