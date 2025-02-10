@@ -15,10 +15,12 @@ namespace DataAccess
             services.AddScoped<IBookingCalendarRepository, BookingCalendarRepository>();
             services.AddScoped<IAboutMeRepository, AboutMeRepository>();
             services.AddScoped<IServiceRepository, ServiceRepository>();
+            services.AddScoped<IPromoRepository, PromoRepository>();
             services.AddDbContext<AppContext>(x => 
             {
                 x.UseNpgsql(connectionString);
             });
+            services.AddScoped<IDatabaseInitializer, DatabaseInitializer>();
             return services;
         }
     }

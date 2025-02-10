@@ -17,6 +17,7 @@ namespace BussinessLogic
             services.AddScoped<IOrderService, OrderService>();
             services.AddScoped<IServiceService, ServiceService>();
             services.AddScoped<IAboutMeService, AboutMeService>();
+            services.AddScoped<IPromoService, PromoService>();
             return services;
         }
     }

@@ -7,6 +7,7 @@ using EyelashesAPI.TelegramBot;
 using Microsoft.Extensions.Options;
 using Telegram.Bot;
 using Microsoft.Extensions.Logging;
+using DataAccess.Interfaces;
 
 namespace EyelashesAPI
 {
@@ -55,6 +56,13 @@ namespace EyelashesAPI
             AppConstants.Init();
 
             var app = builder.Build();
+
+       
+            using (var scope = app.Services.CreateScope())
+            {
+                var databaseInitializer = scope.ServiceProvider.GetRequiredService<IDatabaseInitializer>();
+                databaseInitializer.ApplyMigrationsAsync().GetAwaiter().GetResult();
+            }
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())

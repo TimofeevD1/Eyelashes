@@ -17,6 +17,7 @@ namespace DataAccess
         public DbSet<Order> Orders { get; set; }
         public DbSet<BookingCalendar> BookingCalendars { get; set; }
         public DbSet<BookingSlot> BookingSlots { get; set; }
+        public DbSet<Promo> Promos { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -46,6 +47,27 @@ namespace DataAccess
             modelBuilder.Entity<Order>()
                 .Property(o => o.Status)
                 .HasConversion<int>();
+
+
+            modelBuilder.Entity<Promo>(entity =>
+            {
+                entity.HasIndex(p => p.Title).IsUnique();
+                entity.Property(p => p.Title)
+                    .IsRequired()
+                    .HasMaxLength(100);
+                entity.Property(p => p.DiscountDescription)
+                    .HasMaxLength(500);
+                entity.Property(p => p.OldPrice)
+                    .HasMaxLength(50);
+                entity.Property(p => p.NewPrice)
+                    .HasMaxLength(50);
+
+                entity.Property(p => p.Benefits)
+                    .HasConversion(
+                        v => string.Join(",", v),
+                        v => v.Split(',', StringSplitOptions.RemoveEmptyEntries).ToList()
+                    );
+            });
 
         }
     }
