@@ -200,7 +200,7 @@ const CallBackButton = ({ buttonText, handleClick }) => (
 	</motion.div>
 )
 
-const ContactInfo = ({ phoneNumber, address, buttonText }) => {
+const ContactInfo = ({ phoneNumber, address }) => {
 	const [showNotification, setShowNotification] = useState('')
 	const [isModalOpen, setIsModalOpen] = useState(false)
 
@@ -238,7 +238,7 @@ const ContactInfo = ({ phoneNumber, address, buttonText }) => {
 
 			<div className='flex flex-col items-center justify-center w-full sm:w-1/3'>
 				<CallBackButton
-					buttonText={buttonText}
+					buttonText={'Заказать звонок'}
 					handleClick={handleButtonClick}
 				/>
 			</div>

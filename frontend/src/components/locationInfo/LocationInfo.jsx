@@ -9,7 +9,9 @@ import {
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 
-const LocationInfo = ({ location }) => {
+const LocationInfo = ({ address, phoneNumber, coordinates }) => {
+	const coordinatesLoc = [coordinates.x, coordinates.y]
+
 	const socialLinks = [
 		{
 			icon: FaFacebookF,
@@ -81,8 +83,8 @@ const LocationInfo = ({ location }) => {
 					<YMaps query={{ apikey: 'c68fac64-56d9-48be-9212-0e1679833315' }}>
 						<Map
 							defaultState={{
-								center: location.coordinates,
-								zoom: location.zoom,
+								center: coordinatesLoc,
+								zoom: 15,
 								controls: ['zoomControl', 'fullscreenControl'],
 							}}
 							modules={['control.ZoomControl', 'control.FullscreenControl']}
@@ -90,10 +92,10 @@ const LocationInfo = ({ location }) => {
 							height='100%'
 						>
 							<Placemark
-								geometry={location.coordinates}
+								geometry={coordinatesLoc}
 								properties={{
-									hintContent: location.title,
-									balloonContent: `<strong>${location.title}</strong><br/>${location.address}`,
+									hintContent: 'Наш офис',
+									balloonContent: `<strong>${'Наш офис'}</strong><br/>${address}`,
 								}}
 								options={{
 									preset: 'islands#redDotIcon',
@@ -112,14 +114,10 @@ const LocationInfo = ({ location }) => {
 					transition={{ duration: 1, type: 'spring', stiffness: 100 }}
 				>
 					<h2 className='text-3xl font-bold text-gray-800 drop-shadow-md'>
-						{location.title}
+						Наш офис
 					</h2>
-					<p className='mt-4 text-gray-700 text-lg'>
-						Адрес: {location.address}
-					</p>
-					<p className='mt-2 text-gray-700 text-lg'>
-						Телефон: {location.phone}
-					</p>
+					<p className='mt-4 text-gray-700 text-lg'>Адрес: {address}</p>
+					<p className='mt-2 text-gray-700 text-lg'>Телефон: {phoneNumber}</p>
 
 					{/* Социальные сети */}
 					<div className='mt-6 flex space-x-6'>

@@ -1,8 +1,8 @@
 import React, { useContext } from 'react'
 import { AppDataContext } from '../context/AppDataProvider'
-import AboutMeSection from '../components/aboutMeSection/AboutMeSection'
+import LocationInfo from '../components/locationInfo/LocationInfo'
 
-const AboutMeContainer = ({ scrollToOrderNow }) => {
+const LocationInfoContainer = () => {
 	const { aboutMeData, loading } = useContext(AppDataContext)
 
 	if (loading) {
@@ -21,12 +21,11 @@ const AboutMeContainer = ({ scrollToOrderNow }) => {
 			</div>
 		)
 	}
-
 	return (
-		<div className='p-5'>
-			<AboutMeSection {...aboutMeData} scrollToOrderNow={scrollToOrderNow} />
+		<div className='mb-10 p-5'>
+			<LocationInfo {...aboutMeData} />
 		</div>
 	)
 }
 
-export default AboutMeContainer
+export default LocationInfoContainer
