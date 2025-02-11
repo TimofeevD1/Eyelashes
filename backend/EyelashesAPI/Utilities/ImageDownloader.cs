@@ -7,7 +7,7 @@ namespace EyelashesAPI.Utilities
         public static async Task<string> DownloadImageAsync(HttpClient httpClient, string imageUrl, CancellationToken cancellationToken)
         {
             var fileName = Guid.NewGuid().ToString();
-            var filePath = Path.Combine(AppConstants.ImagesDirectory, fileName);
+            var filePath = Path.Combine("", fileName);
 
             try
             {

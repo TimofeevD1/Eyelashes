@@ -1,10 +1,11 @@
 ﻿using BussinessLogic.Records;
 using EyelashesAPI.Requests;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EyelashesAPI.Controllers
 {
-
+    [Authorize]
     [ApiController]
     [Route("api/[controller]")]
     public class PromoController : ControllerBase
