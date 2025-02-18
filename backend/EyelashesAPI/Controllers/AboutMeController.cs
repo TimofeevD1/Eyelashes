@@ -3,11 +3,13 @@ using BussinessLogic.Records;
 using EyelashesAPI.Requests;
 using EyelashesAPI.TelegramBot;
 using EyelashesAPI.Utilities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Telegram.Bot;
 
 namespace EyelashesAPI.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("api/[controller]")]
     public class AboutMeController: ControllerBase
@@ -39,35 +41,39 @@ namespace EyelashesAPI.Controllers
 
             if (count == 0)
             {
-                return BadRequest("Information about me has not been created yet.");
+                return BadRequest(new { success = false, message = "Information about me has not been created yet." });
             }
-
 
             long chatId = 977105840;
             string orderDetails = "Имя клиента: Иван, Номер: 123456, Дата: 01/01/2025, Услуга: Стрижка, Время: 12:00";
-            
-            await _telegramMessageService.SendMessageAsync(chatId, "", cancellationToken,true, orderDetails);
+
+            await _telegramMessageService.SendMessageAsync(chatId, "", cancellationToken, true, orderDetails);
 
             var aboutMe = await _aboutMeService.GetAsync(cancellationToken);
-            return Ok(aboutMe);
+
+            if (aboutMe == null)
+            {
+                return BadRequest(new { success = false, message = "Failed to retrieve information about me." });
+            }
+
+            return Ok(new { success = true, data = aboutMe });
         }
+
 
         [HttpPost("create")]
         public async Task<IActionResult> CreateAsync([FromForm] AboutMeRequest aboutMeRequest, CancellationToken cancellationToken)
         {
             var count = await _aboutMeService.GetCountAsync(cancellationToken);
 
-            if (count > 0) 
+            if (count > 0)
             {
-                return BadRequest("Information about me has already been created.");
+                return BadRequest(new { success = false, message = "Information about me has already been created." });
             }
 
             if (string.IsNullOrEmpty(aboutMeRequest.MainImageUrl))
             {
-                return BadRequest("Main image URL is required.");
+                return BadRequest(new { success = false, message = "Main image URL is required." });
             }
-
-
 
             var aboutMe = new AboutMeRec
             {
@@ -83,23 +89,32 @@ namespace EyelashesAPI.Controllers
 
             await _aboutMeService.CreateAsync(aboutMe, cancellationToken);
 
-            return Ok("AboutMe has been created successfully.");
+            // Возвращаем Ok с дополнительной информацией
+            return Ok(new { success = true, message = "AboutMe has been created successfully." });
         }
-        
+
         [HttpDelete("delete/{id:int}")]
         public async Task<IActionResult> DeleteAsync(int id, CancellationToken cancellationToken)
         {
+            var existingAboutMe = await _aboutMeService.GetAsync(cancellationToken);
+
+            if (existingAboutMe == null || existingAboutMe.Id != id)
+            {
+                return NotFound(new { success = false, message = $"AboutMe with ID {id} not found." });
+            }
+
             await _aboutMeService.DeleteAsync(id, cancellationToken);
-            return Ok($"AboutMe with ID {id} has been deleted successfully.");
+
+            return Ok(new { success = true, message = $"AboutMe with ID {id} has been deleted successfully." });
         }
 
         [HttpPut("update/{id:int}")]
-        public async Task<IActionResult> UpdateAsync(int id, [FromForm] AboutMeRequest aboutMeRequest, CancellationToken cancellationToken)
+        public async Task<IActionResult> UpdateAsync(int id, [FromBody] AboutMeRequest aboutMeRequest, CancellationToken cancellationToken)
         {
             var existingAboutMe = await _aboutMeService.GetAsync(cancellationToken);
             if (existingAboutMe == null || existingAboutMe.Id != id)
             {
-                return NotFound($"AboutMe with ID {id} not found.");
+                return NotFound(new { success = false, message = $"AboutMe with ID {id} not found." });
             } 
             var mainImageFilePath = string.IsNullOrEmpty(aboutMeRequest.MainImageUrl) 
                 ? existingAboutMe.MainImagePath
@@ -146,7 +161,7 @@ namespace EyelashesAPI.Controllers
 
             await _aboutMeService.UpdateAsync(aboutMe, cancellationToken);
 
-            return Ok($"AboutMe with ID {id} has been updated successfully.");
+            return Ok(new { success = true, message = $"AboutMe with ID {id} has been updated successfully." });
         }
 
 
@@ -154,8 +169,16 @@ namespace EyelashesAPI.Controllers
         public async Task<IActionResult> GetPhotosAsync(int id, CancellationToken cancellationToken)
         {
             var photos = await _aboutMeService.GetPhotosAsync(id, cancellationToken);
-            return Ok(photos);
+
+            if (photos == null || !photos.Any())
+            {
+                return NotFound(new { success = false, message = $"No photos found for AboutMe with ID {id}." });
+            }
+
+            return Ok(new { success = true, photos = photos });
         }
+
+
 
         [HttpPost("{id:int}/addphotos")]
         public async Task<IActionResult> AddPhotosAsync(int id, [FromForm] List<string> photoUrls, CancellationToken cancellationToken)
@@ -168,16 +191,23 @@ namespace EyelashesAPI.Controllers
                     photoUrlsCurrent.Add(photoUrl);
                 }
             }
+
+            if (photoUrlsCurrent.Count == 0)
+            {
+                return BadRequest(new { success = false, message = "No valid photo URLs provided." });
+            }
+
             await _aboutMeService.AddPhotosAsync(id, photoUrlsCurrent, cancellationToken);
-            return Ok($"Photos have been added to AboutMe with ID {id}.");
+            return Ok(new { success = true, message = $"Photos have been added to AboutMe with ID {id}." });
         }
 
         [HttpDelete("deletephoto/{photoId:int}")]
         public async Task<IActionResult> DeletePhotoAsync(int photoId, CancellationToken cancellationToken)
         {
             await _aboutMeService.DeletePhotoAsync(photoId, cancellationToken);
-            return Ok($"Photo with ID {photoId} has been deleted successfully.");
+            return Ok(new { success = true, message = $"Photo with ID {photoId} has been deleted successfully." });
         }
+
 
     }
 }
