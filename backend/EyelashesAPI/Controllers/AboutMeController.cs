@@ -2,7 +2,6 @@
 using BussinessLogic.Records;
 using EyelashesAPI.Requests;
 using EyelashesAPI.TelegramBot;
-using EyelashesAPI.Utilities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Telegram.Bot;

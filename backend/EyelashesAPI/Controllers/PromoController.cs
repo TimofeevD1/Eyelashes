@@ -23,10 +23,10 @@ namespace EyelashesAPI.Controllers
             var promo = await _promoService.GetAsync(cancellationToken);
             if (promo == null)
             {
-                return NotFound($"Promo not found.");
+                return NotFound(new { success = false, message = "Promo not found." });
             }
 
-            return Ok(promo);
+            return Ok(new { success = true, data = promo });
         }
 
 
@@ -35,7 +35,7 @@ namespace EyelashesAPI.Controllers
         {
             if (promoRequest == null)
             {
-                return BadRequest("Promo data is required.");
+                return BadRequest(new { success = false, message = "Promo data is required." });
             }
 
             var promoRec = new PromoRec
@@ -48,16 +48,16 @@ namespace EyelashesAPI.Controllers
             };
 
             await _promoService.CreateAsync(promoRec, cancellationToken);
-            return Ok("Promo has been created successfully.");
+            return Ok(new { success = true, message = "Promo has been created successfully." });
         }
 
         [HttpPut("update")]
-        public async Task<IActionResult> UpdatePromoAsync([FromForm] PromoRequest promoRequest, CancellationToken cancellationToken)
+        public async Task<IActionResult> UpdatePromoAsync([FromBody] PromoRequest promoRequest, CancellationToken cancellationToken)
         {
             var existingPromo = await _promoService.GetAsync(cancellationToken);
             if (existingPromo == null)
             {
-                return NotFound($"Promo not found.");
+                return NotFound(new { success = false, message = "Promo not found." });
             }
 
             var updatedPromoRec = new PromoRec { Id = existingPromo.Id, };
@@ -69,7 +69,7 @@ namespace EyelashesAPI.Controllers
             updatedPromoRec.Benefits = promoRequest.Benefits.Any() ? promoRequest.Benefits : promoRequest.Benefits;
 
             await _promoService.UpdateAsync(updatedPromoRec, cancellationToken);
-            return Ok($"Promo has been updated successfully.");
+            return Ok(new { success = true, message = "Promo has been updated successfully." });
         }
 
 
@@ -79,11 +79,12 @@ namespace EyelashesAPI.Controllers
             var existingPromo = await _promoService.GetAsync(cancellationToken);
             if (existingPromo == null)
             {
-                return NotFound($"Promo not found.");
+                return NotFound(new { success = false, message = "Promo not found." });
             }
 
             await _promoService.DeleteAsync(existingPromo.Id, cancellationToken);
-            return Ok($"Promo with ID {existingPromo.Id} has been deleted successfully.");
+
+            return Ok(new { success = true, message = $"Promo with ID {existingPromo.Id} has been deleted successfully." });
         }
     }
 }

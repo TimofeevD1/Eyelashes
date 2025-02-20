@@ -1,11 +1,12 @@
 ﻿using BussinessLogic.Interfaces;
 using BussinessLogic.Records;
 using EyelashesAPI.Requests;
-using EyelashesAPI.Utilities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EyelashesAPI.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("api/[controller]")]
     public class ServiceController : ControllerBase
@@ -25,34 +26,34 @@ namespace EyelashesAPI.Controllers
             var service = await _serviceService.GetByIdAsync(id, cancellationToken);
             if (service == null)
             {
-                return NotFound($"Service with ID {id} not found.");
+                return NotFound(new { success = false, message = $"Service with ID {id} not found." }); 
             }
-            return Ok(service);
+            return Ok(new { success = true, data = service });
         }
 
         [HttpGet("getall")]
         public async Task<IActionResult> GetAllAsync(CancellationToken cancellationToken)
         {
             var services = await _serviceService.GetAllAsync(cancellationToken);
-            return Ok(services);
+            return Ok(new { success = true, data = services });
         }
 
         [HttpPost("create")]
-        public async Task<IActionResult> CreateAsync([FromForm] ServiceRequest serviceRequest, CancellationToken cancellationToken)
+        public async Task<IActionResult> CreateAsync([FromBody] ServiceRequest serviceRequest, CancellationToken cancellationToken)
         {
             if (string.IsNullOrEmpty(serviceRequest.MainImageUrl))
             {
-                return BadRequest("Main image URL is required.");
+                return BadRequest(new { success = false, message = "Main image URL is required." });
             }
 
-            var mainImagePath = await ImageDownloader.DownloadImageAsync(_httpClient, serviceRequest.MainImageUrl, cancellationToken);
+            var mainImagePath = serviceRequest.MainImageUrl;
 
             var imagePaths = new List<string>();
             if (serviceRequest.ImageUrls != null && serviceRequest.ImageUrls.Count > 0)
             {
                 foreach (var imageUrl in serviceRequest.ImageUrls)
                 {
-                    var imagePath = await ImageDownloader.DownloadImageAsync(_httpClient, imageUrl, cancellationToken);
+                    var imagePath = imageUrl;
                     imagePaths.Add(imagePath);
                 }
             }
@@ -69,21 +70,21 @@ namespace EyelashesAPI.Controllers
 
             await _serviceService.CreateAsync(serviceRec, cancellationToken);
 
-            return Ok("Service has been created successfully.");
+            return Ok(new { success = true, message = "Service has been created successfully." });
         }
 
         [HttpPut("update/{id:int}")]
-        public async Task<IActionResult> UpdateAsync(int id, [FromForm] ServiceRequest serviceRequest, CancellationToken cancellationToken)
+        public async Task<IActionResult> UpdateAsync(int id, [FromBody] ServiceRequest serviceRequest, CancellationToken cancellationToken)
         {
             var existingService = await _serviceService.GetByIdAsync(id, cancellationToken);
             if (existingService == null)
             {
-                return NotFound($"Service with ID {id} not found.");
+                return NotFound(new { success = false, message = $"Service with ID {id} not found." });
             }
 
             var mainImagePath = string.IsNullOrEmpty(serviceRequest.MainImageUrl)
                 ? existingService.MainImagePath
-                : await ImageDownloader.DownloadImageAsync(_httpClient, serviceRequest.MainImageUrl, cancellationToken);
+                : serviceRequest.MainImageUrl;
 
             var imagePaths = existingService.ImagePaths;
 
@@ -92,8 +93,7 @@ namespace EyelashesAPI.Controllers
                 var newImagePaths = new List<string>();
                 foreach (var imageUrl in serviceRequest.ImageUrls)
                 {
-                    var imagePath = await ImageDownloader.DownloadImageAsync(_httpClient, imageUrl, cancellationToken);
-                    newImagePaths.Add(imagePath);
+                    newImagePaths.Add(imageUrl);
                 }
 
                 if (newImagePaths.Count > 0)
@@ -115,7 +115,7 @@ namespace EyelashesAPI.Controllers
 
             await _serviceService.UpdateAsync(updatedServiceRec, cancellationToken);
 
-            return Ok($"Service with ID {id} has been updated successfully.");
+            return Ok(new { success = true, message = $"Service with ID {id} has been updated successfully." });
         }
 
         [HttpDelete("delete/{id:int}")]
@@ -124,41 +124,40 @@ namespace EyelashesAPI.Controllers
             var existingService = await _serviceService.GetByIdAsync(id, cancellationToken);
             if (existingService == null)
             {
-                return NotFound($"Service with ID {id} not found.");
+                return NotFound(new { success = false, message = $"Service with ID {id} not found." });
             }
 
             await _serviceService.DeleteAsync(id, cancellationToken);
-            return Ok($"Service with ID {id} has been deleted successfully.");
+            return Ok(new { success = true, data = $"Service with ID {id} has been deleted successfully." });
         }
 
         [HttpPost("{id:int}/addimages")]
-        public async Task<IActionResult> AddImagesAsync(int id, [FromForm] List<string> imageUrls, CancellationToken cancellationToken)
+        public async Task<IActionResult> AddImagesAsync(int id, [FromBody] List<string> imageUrls, CancellationToken cancellationToken)
         {
             var newImagePaths = new List<string>();
 
             foreach (var imageUrl in imageUrls)
             {
-                var imagePath = await ImageDownloader.DownloadImageAsync(_httpClient, imageUrl, cancellationToken);
-                newImagePaths.Add(imagePath);
+                newImagePaths.Add(imageUrl);
             }
 
             await _serviceService.AddImagesAsync(id, newImagePaths, cancellationToken);
 
-            return Ok($"Images have been added to Service with ID {id}.");
+            return Ok(new { success = true, message = $"Images have been added to Service with ID {id}." });
         }
 
         [HttpGet("{id:int}/images")]
         public async Task<IActionResult> GetImagesAsync(int id, CancellationToken cancellationToken)
         {
             var images = await _serviceService.GetImagesAsync(id, cancellationToken);
-            return Ok(images);
+            return Ok(new { success = true, data = images });
         }
 
         [HttpDelete("deleteimage/{imageId:int}")]
         public async Task<IActionResult> DeleteImageAsync(int imageId, CancellationToken cancellationToken)
         {
             await _serviceService.DeleteImageAsync(imageId, cancellationToken);
-            return Ok($"Image with ID {imageId} has been deleted successfully.");
+            return Ok(new { success = true, message = $"Image with ID {imageId} has been deleted successfully." });
         }
     }
 }
