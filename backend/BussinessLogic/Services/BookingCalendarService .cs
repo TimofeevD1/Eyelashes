@@ -5,7 +5,7 @@ using DataAccess.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace BussinessLogic.Services
@@ -32,17 +32,34 @@ namespace BussinessLogic.Services
             }).ToList();
         }
 
-        public async Task AddOrUpdateBookingSlotsAsync(DateTime date, List<BookingSlotRec> slotRecs, CancellationToken cancellationToken = default)
+        public async Task AddBookingSlotsAsync(DateTime date, List<BookingSlotRec> slotRecs, CancellationToken cancellationToken = default)
         {
             var slots = slotRecs.Select(sr => new BookingSlot
             {
-                Id = sr.Id,
                 SlotTime = sr.Time,
                 Status = sr.Status,
                 OrderId = sr.OrderId
             }).ToList();
 
-            await _bookingCalendarRepository.AddOrUpdateBookingSlotsAsync(date, slots, cancellationToken);
+            await _bookingCalendarRepository.AddBookingSlotsAsync(date, slots, cancellationToken);
+        }
+
+        public async Task UpdateBookingSlotAsync(int slotId, BookingSlotRec slotRec, CancellationToken cancellationToken = default)
+        {
+            var updatedSlot = new BookingSlot
+            {
+                Id = slotRec.Id,
+                SlotTime = slotRec.Time,
+                Status = slotRec.Status,
+                OrderId = slotRec.OrderId
+            };
+
+            await _bookingCalendarRepository.UpdateBookingSlotAsync(slotId, updatedSlot, cancellationToken);
+        }
+
+        public async Task DeleteBookingSlotAsync(int slotId, CancellationToken cancellationToken = default)
+        {
+            await _bookingCalendarRepository.DeleteBookingSlotAsync(slotId, cancellationToken);
         }
 
         public async Task BookSlotAsync(int slotId, int orderId, CancellationToken cancellationToken = default)
@@ -71,6 +88,5 @@ namespace BussinessLogic.Services
                 }).ToList()
             }).ToList();
         }
-
     }
 }

@@ -78,9 +78,9 @@ namespace BussinessLogic.Services
             await _orderRepository.DeleteAsync(id, cancellationToken);
         }
 
-        public async Task SetStatusToCreatedAsync(int orderId, CancellationToken cancellationToken = default)
+        public async Task SetStatusToCancelledAsync(int orderId, CancellationToken cancellationToken = default)
         {
-            await _orderRepository.SetOrderStatusToCreatedAsync(orderId, cancellationToken);
+            await _orderRepository.SetOrderStatusToCancelledAsync(orderId, cancellationToken);
         }
 
         public async Task SetStatusToConfirmedAsync(int orderId, CancellationToken cancellationToken = default)

@@ -72,7 +72,7 @@ namespace DataAccess.Repositories
             return await _context.Orders.ToListAsync(cancellationToken);
         }
 
-        public async Task SetOrderStatusToCreatedAsync(int orderId, CancellationToken cancellationToken = default)
+        public async Task SetOrderStatusToCancelledAsync(int orderId, CancellationToken cancellationToken = default)
         {
             var order = await _context.Orders.FindAsync(new object[] { orderId }, cancellationToken);
             if (order == null)
@@ -80,7 +80,7 @@ namespace DataAccess.Repositories
                 throw new Exception($"Order with ID {orderId} not found.");
             }
 
-            order.Status = OrderStatus.Created;
+            order.Status = OrderStatus.Сancelled;
 
             _context.Orders.Update(order);
             await _context.SaveChangesAsync(cancellationToken);

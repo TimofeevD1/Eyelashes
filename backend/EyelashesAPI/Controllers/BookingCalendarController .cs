@@ -3,6 +3,11 @@ using BussinessLogic.Records;
 using DataAccess.Models;
 using EyelashesAPI.Requests;
 using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace EyelashesAPI.Controllers
 {
@@ -17,77 +22,94 @@ namespace EyelashesAPI.Controllers
             _bookingCalendarService = bookingCalendarService;
         }
 
-        [HttpGet("slots/{date}")]
-        public async Task<IActionResult> GetSlotsAsync(string date, CancellationToken cancellationToken)
+        /// <summary>
+        /// Получить все слоты на определенную дату.
+        /// </summary>
+        [HttpGet("getSlots")]
+        public async Task<IActionResult> GetSlotsAsync([FromQuery] DateTime date, CancellationToken cancellationToken)
         {
-            if (DateTime.TryParse(date, out var parsedDate))
+            var slots = await _bookingCalendarService.GetBookingSlotsAsync(date, cancellationToken);
+            return Ok(new { success = true, data = slots });
+        }
+
+        /// <summary>
+        /// Добавить новые слоты на дату.
+        /// </summary>
+        [HttpPost("addSlots")]
+        public async Task<IActionResult> AddSlotsAsync([FromQuery] DateTime date, [FromBody] List<BookingSlotRequest> slotRequests, CancellationToken cancellationToken)
+        {
+            if (slotRequests == null || !slotRequests.Any())
             {
-                var slots = await _bookingCalendarService.GetBookingSlotsAsync(parsedDate, cancellationToken);
-                return Ok(slots);
+                return BadRequest(new { success = false, message = "Slot list cannot be empty." });
             }
 
-            return BadRequest("Invalid date format.");
+            var slots = slotRequests.Select(sr => new BookingSlotRec
+            {
+                Time = sr.Time,
+                Status = Enum.TryParse<BookingSlotStatus>(sr.Status, out var status) ? status : BookingSlotStatus.Free,
+                OrderId = sr.OrderId
+            }).ToList();
+
+            await _bookingCalendarService.AddBookingSlotsAsync(date, slots, cancellationToken);
+            return Ok(new { success = true, message = "Slots have been added successfully." });
         }
 
-        [HttpPost("slots")]
-        public async Task<IActionResult> AddOrUpdateSlotsAsync([FromQuery] string date, [FromBody] List<BookingSlotRequest> slotRequests, CancellationToken cancellationToken)
+        /// <summary>
+        /// Обновить существующий слот.
+        /// </summary>
+        [HttpPut("updateSlot/{slotId:int}")]
+        public async Task<IActionResult> UpdateSlotAsync(int slotId, [FromBody] BookingSlotRequest slotRequest, CancellationToken cancellationToken)
         {
-            if (DateTime.TryParse(date, out var parsedDate)) 
-            {   
-                var slots = slotRequests.Select(sr => new BookingSlotRec
-                {
-                    Time = sr.Time,
-                    Status = Enum.TryParse<BookingSlotStatus>(sr.Status, out var status) ? status : BookingSlotStatus.Free,
-                    OrderId = sr.OrderId
-                }).ToList();
+            var updatedSlot = new BookingSlotRec
+            {
+                Id = slotId,
+                Time = slotRequest.Time,
+                Status = Enum.TryParse<BookingSlotStatus>(slotRequest.Status, out var status) ? status : BookingSlotStatus.Free,
+                OrderId = slotRequest.OrderId
+            };
 
-                await _bookingCalendarService.AddOrUpdateBookingSlotsAsync(parsedDate, slots, cancellationToken);
-                return Ok("Slots have been added or updated successfully."); 
-            }
-
-            return BadRequest("Invalid date format.");
+            await _bookingCalendarService.UpdateBookingSlotAsync(slotId, updatedSlot, cancellationToken);
+            return Ok(new { success = true, message = $"Slot {slotId} has been updated successfully." });
         }
 
+        /// <summary>
+        /// Удалить слот по ID.
+        /// </summary>
+        [HttpDelete("deleteSlot/{slotId:int}")]
+        public async Task<IActionResult> DeleteSlotAsync(int slotId, CancellationToken cancellationToken)
+        {
+            await _bookingCalendarService.DeleteBookingSlotAsync(slotId, cancellationToken);
+            return Ok(new { success = true, message = $"Slot {slotId} has been deleted successfully." });
+        }
+
+        /// <summary>
+        /// Забронировать слот.
+        /// </summary>
         [HttpPost("slots/{slotId:int}/book")]
         public async Task<IActionResult> BookSlotAsync(int slotId, [FromBody] int orderId, CancellationToken cancellationToken)
         {
-            try
-            {
-                await _bookingCalendarService.BookSlotAsync(slotId, orderId, cancellationToken);
-                return Ok($"Slot {slotId} has been booked successfully.");
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
+            await _bookingCalendarService.BookSlotAsync(slotId, orderId, cancellationToken);
+            return Ok(new { success = true, message = $"Slot {slotId} has been booked." });
         }
 
+        /// <summary>
+        /// Отменить бронирование слота.
+        /// </summary>
         [HttpPost("slots/{slotId:int}/cancel")]
         public async Task<IActionResult> CancelBookingAsync(int slotId, CancellationToken cancellationToken)
         {
-            try
-            {
-                await _bookingCalendarService.CancelBookingAsync(slotId, cancellationToken);
-                return Ok($"Booking for slot {slotId} has been canceled successfully.");
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
+            await _bookingCalendarService.CancelBookingAsync(slotId, cancellationToken);
+            return Ok(new { success = true, message = $"Booking for slot {slotId} has been canceled." });
         }
 
-        [HttpGet("all")]
+        /// <summary>
+        /// Получить весь календарь бронирований.
+        /// </summary>
+        [HttpGet("getAll")]
         public async Task<IActionResult> GetAllBookingsAsync(CancellationToken cancellationToken)
         {
-            try
-            {
-                var bookings = await _bookingCalendarService.GetAllBookingCalendarsAsync(cancellationToken);
-                return Ok(bookings);
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, $"An error occurred while retrieving data: {ex.Message}");
-            }
+            var bookings = await _bookingCalendarService.GetAllBookingCalendarsAsync(cancellationToken);
+            return Ok(new { success = true, data = bookings });
         }
     }
 }

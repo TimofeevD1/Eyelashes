@@ -2,8 +2,9 @@
 {
     public enum OrderStatus
     {
-        Created = 1,
-        Confirmed = 2
+        Created = 0,
+        Confirmed = 1,
+        Сancelled = 2
     }
 
     public class Order

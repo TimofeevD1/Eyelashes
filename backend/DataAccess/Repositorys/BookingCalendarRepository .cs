@@ -31,13 +31,14 @@ namespace DataAccess.Repositorys
             return calendar.Slots;
         }
 
-        public async Task AddOrUpdateBookingSlotsAsync(DateTime date, List<BookingSlot> slots, CancellationToken cancellationToken = default)
+        public async Task AddBookingSlotsAsync(DateTime date, List<BookingSlot> slots, CancellationToken cancellationToken = default)
         {
             var utcDate = date.Kind == DateTimeKind.Unspecified
                 ? DateTime.SpecifyKind(date, DateTimeKind.Utc)
                 : date.ToUniversalTime();
 
             var calendar = await _context.BookingCalendars
+                .Include(b => b.Slots)
                 .FirstOrDefaultAsync(b => b.Date.Date == utcDate.Date, cancellationToken);
 
             if (calendar == null)
@@ -45,16 +46,53 @@ namespace DataAccess.Repositorys
                 calendar = new BookingCalendar
                 {
                     Date = utcDate,
-                    Slots = slots
+                    Slots = new List<BookingSlot>(slots)
                 };
                 _context.BookingCalendars.Add(calendar);
             }
             else
             {
-                calendar.Slots = slots;
-                _context.BookingCalendars.Update(calendar);
+                foreach (var slot in slots)
+                {
+                    if (!calendar.Slots.Any(s => s.Id == slot.Id))
+                    {
+                        calendar.Slots.Add(slot);
+                    }
+                }
             }
 
+            await _context.SaveChangesAsync(cancellationToken);
+        }
+
+        public async Task UpdateBookingSlotAsync(int slotId, BookingSlot updatedSlot, CancellationToken cancellationToken = default)
+        {
+            var existingSlot = await _context.BookingSlots
+                .FirstOrDefaultAsync(s => s.Id == slotId, cancellationToken);
+
+            if (existingSlot == null)
+            {
+                throw new Exception("Слот не найден.");
+            }
+
+            existingSlot.SlotTime = updatedSlot.SlotTime;
+            existingSlot.Status = updatedSlot.Status;
+            existingSlot.OrderId = updatedSlot.OrderId;
+
+            _context.BookingSlots.Update(existingSlot);
+            await _context.SaveChangesAsync(cancellationToken);
+        }
+
+        public async Task DeleteBookingSlotAsync(int slotId, CancellationToken cancellationToken = default)
+        {
+            var slot = await _context.BookingSlots
+                .FirstOrDefaultAsync(s => s.Id == slotId, cancellationToken);
+
+            if (slot == null)
+            {
+                throw new Exception("Слот не найден.");
+            }
+
+            _context.BookingSlots.Remove(slot);
             await _context.SaveChangesAsync(cancellationToken);
         }
 

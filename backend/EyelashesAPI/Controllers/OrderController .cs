@@ -1,5 +1,6 @@
 ﻿using BussinessLogic.Interfaces;
 using BussinessLogic.Records;
+using DataAccess.Models;
 using EyelashesAPI.Requests;
 using Microsoft.AspNetCore.Mvc;
 
@@ -24,14 +25,14 @@ namespace EyelashesAPI.Controllers
             {
                 return NotFound($"Order with ID {id} not found.");
             }
-            return Ok(order);
+            return Ok(new { success = true, data = order }); 
         }
 
         [HttpGet("getall")]
         public async Task<IActionResult> GetAllAsync(CancellationToken cancellationToken)
         {
             var orders = await _orderService.GetAllAsync(cancellationToken);
-            return Ok(orders);
+            return Ok(new { success = true, data = orders }); 
         }
 
         [HttpPost("create")]
@@ -39,7 +40,8 @@ namespace EyelashesAPI.Controllers
         {
             if (orderRequest == null)
             {
-                return BadRequest("Invalid order data.");
+                return BadRequest(new { success = false, message = "Invalid order data." });
+
             }
 
             var orderRec = new OrderRec
@@ -48,11 +50,11 @@ namespace EyelashesAPI.Controllers
                 Name = orderRequest.Name,
                 PhoneNumber = orderRequest.PhoneNumber,
                 Service = orderRequest.Service,
-                Status = orderRequest.Status
+                Status = 0
             };
 
             await _orderService.CreateAsync(orderRec, cancellationToken);
-            return Ok("Order has been created successfully.");
+            return Ok(new { success = true, message = "Order has been created successfully." }); 
         }
 
         [HttpPut("update/{id:int}")]
@@ -61,7 +63,7 @@ namespace EyelashesAPI.Controllers
             var existingOrder = await _orderService.GetByIdAsync(id, cancellationToken);
             if (existingOrder == null)
             {
-                return NotFound($"Order with ID {id} not found.");
+                return NotFound(new { success = false, message = $"Order with ID {id} not found." }); 
             }
 
             var updatedOrderRec = new OrderRec
@@ -75,7 +77,7 @@ namespace EyelashesAPI.Controllers
             };
 
             await _orderService.UpdateAsync(updatedOrderRec, cancellationToken);
-            return Ok($"Order with ID {id} has been updated successfully.");
+            return Ok(new { success = true, message = $"Order with ID {id} has been updated successfully." }); 
         }
 
         [HttpDelete("delete/{id:int}")]
@@ -84,24 +86,24 @@ namespace EyelashesAPI.Controllers
             var existingOrder = await _orderService.GetByIdAsync(id, cancellationToken);
             if (existingOrder == null)
             {
-                return NotFound($"Order with ID {id} not found.");
+                return NotFound(new { success = false, message = $"Order with ID {id} not found." });
             }
 
             await _orderService.DeleteAsync(id, cancellationToken);
-            return Ok($"Order with ID {id} has been deleted successfully.");
+            return Ok(new { success = true, message = $"Order with ID {id} has been deleted successfully." }); 
         }
 
-        [HttpPost("{id:int}/setstatus/created")]
-        public async Task<IActionResult> SetStatusToCreatedAsync(int id, CancellationToken cancellationToken)
+        [HttpPost("{id:int}/setstatus/cancelled")]
+        public async Task<IActionResult> SetStatusToCancelledAsync(int id, CancellationToken cancellationToken)
         {
             var existingOrder = await _orderService.GetByIdAsync(id, cancellationToken);
             if (existingOrder == null)
             {
-                return NotFound($"Order with ID {id} not found.");
+                return NotFound(new { success = false, message = $"Order with ID {id} not found." });
             }
 
-            await _orderService.SetStatusToCreatedAsync(id, cancellationToken);
-            return Ok($"Order with ID {id} status has been set to 'Created'.");
+            await _orderService.SetStatusToCancelledAsync(id, cancellationToken);
+            return Ok(new { success = true, message = $"Order with ID {id} status has been set to 'Cancelled'." });
         }
 
         [HttpPost("{id:int}/setstatus/confirmed")]
@@ -110,11 +112,11 @@ namespace EyelashesAPI.Controllers
             var existingOrder = await _orderService.GetByIdAsync(id, cancellationToken);
             if (existingOrder == null)
             {
-                return NotFound($"Order with ID {id} not found.");
+                return NotFound(new { success = false, message = $"Order with ID {id} not found." });
             }
 
             await _orderService.SetStatusToConfirmedAsync(id, cancellationToken);
-            return Ok($"Order with ID {id} status has been set to 'Confirmed'.");
+            return Ok(new { success = true, message = $"Order with ID {id} status has been set to 'Confirmed'." }); 
         }
     }
 }
